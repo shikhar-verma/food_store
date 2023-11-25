@@ -1,0 +1,219 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variables  */
+:root {
+    --primary-color: #13341E;
+    --secondary-color: #EB9C35;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    opacity: .4;
+    position: absolute;
+    top: 0px;
+    /* left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo {
+    /* border: 2px solid red; */
+    margin: -531px -529px;
+    transform: scale(.1);
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin: 5px 10px;
+}
+
+#navbar ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(91, 139, 91);
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 120px 50px 120px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* margin-top: 50px; */
+}
+
+#home::before {
+    content: "";
+    background: url(../img/bg3.jpg) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    /* border: 2px solid red; */
+}
+
+.h-primary {
+    font-size: 5rem;
+    padding: 40px;
+    margin: 0px 20px 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#home h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 10px -25px 10px;
+}
+
+#home p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: .6;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    margin: 45px;
+    font-size: 1.7rem;
+    border-radius: 59px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(91, 139, 91);
+    border-color: rgb(91, 139, 91);
+}
+
+.centre {
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 3rem;
+    padding: 8px;
+    margin: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#services {
+    display: flex;
+    margin: 25px;
+}
+
+#services .box{
+    /* border: 2px solid red; */
+    margin: 20px;
+    padding: 30px 20px;
+    border-radius: 25px;
+    background-color: #f3efe4;
+}
+
+#services .box img{
+    display: block;
+    margin: 5px auto;
+    height: 200px;
+}
+#client-section{
+    margin: 66px 0px 0px 0px;
+    height: 500px;
+    padding: 30px 0px 0px 0px;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url(../img/bg4.jpg) no-repeat center;
+   background-size: 120%;
+   z-index: -1;
+   opacity: .7;
+   height: 500px;
+   width: 100%;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+}
+#clients img{
+  height: 110px;
+}
+.client-id{
+    padding: 20px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg2.jpg) no-repeat center;
+    background-size: 110%;
+    z-index: -1;
+    opacity: .75;
+    height: 525px;
+    width: 100%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 5px 0px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 0px 5px 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 30px;
+}
